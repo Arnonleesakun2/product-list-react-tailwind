@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+    --red:hsl(14, 86%, 42%);
+    --green:hsl(159, 69%, 38%);
+    --rose50:hsl(20, 50%, 98%);
+    --rose100:hsl(13, 31%, 94%);
+    --rose300:hsl(14, 25%, 72%);
+    --rose400:hsl(7, 20%, 60%);
+    --rose500:hsl(12, 20%, 44%);
+    --rose900:hsl(14, 65%, 9%);
+}
+body{
+    font-family: "Red Hat Text", sans-serif;
+    .leftsection{
+        overflow: auto;
+        scrollbar-width: none; /* สำหรับ Firefox */
+        -ms-overflow-style: none; /* สำหรับ Internet Explorer และ Edge */
+        .leftsection::-webkit-scrollbar {
+            display: none; /* สำหรับ Chrome, Safari และเบราว์เซอร์ที่รองรับ WebKit */
+        }
+        .cardtopic{
+            font-weight: 700;
+            font-size: 25px;
+        }
+    }
+    
+    .rightsection{
+        position: sticky;
+        .carttopic{
+            color: var(--red);
+            font-weight: 700;
+        }
+    }
+    
+}
